@@ -88,7 +88,6 @@ h1{
     
 
 }
-
 .collection .collection-banner img{
     width: 224px;
     height: 104px;
@@ -111,3 +110,14 @@ h1{
     color:#AEAEAE;
 }
 
+footer{
+    text-align: center;
+    color:#D9DBE1;
+    background-color:rgb(23, 4, 44);
+}
+.footer-head{
+    color:#D9DBE1; ;
+}
+.social-media{
+    
+}
