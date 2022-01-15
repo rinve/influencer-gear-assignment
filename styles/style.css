@@ -10,32 +10,39 @@ h1{
     font-weight: 2000em;
     color: #3A3A3A;
 }
-
-.flexible-continer{
-    display: flex;
-    margin-bottom: 100px; width: 870px;
-    padding: 30px;
-    border-radius: 5px; 
-
-     
+.section-title{
+    text-align: center;
+    font-size: 28px;
+    /* margin-bottom: -60%; */
+    color:#3A3A3A
+    
 }
-
+.first-heading{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* padding: 0 50px; */
+    
+}
 .half-width{
     width: 50%;
-    padding-left: 2%;
-    margin-left: 4%;
-    margin-right: 4%;
-    padding-left: 20px;
     color: #3A3A3A;
     
     
 }
+.right-half-width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .half-width img{
-    width: 100%;
-    background-color:powderblue;
-    background-position: right;
-    margin: 0%;
-    padding-right: 0%;
+    width: 60%;
+    /* background-color:powderblue; */
+    /* background-position: right; */
+    /* margin: 0%;
+    padding-right: 0%; */
     
 
 }
@@ -44,61 +51,46 @@ h1{
     text-decoration: none;
     background-color: #E02C6D;
     color: white;
-    padding: 5px;
+    padding: 15px;
     border-radius: 41px;
     font-weight: 10px;
-   
+    border: none;
 
 }
+/* sponsor companies */
 .companies-logo{
-    padding-left: 120px;
+    margin: 100px 0;
+}
+.sponser-companies{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    padding: 30px 0px;
+    box-shadow: 1px 1px 4px -1px grey;
 }
 
 
-.section-title{
-    text-align: center;
-    font-size: 28px;
-    padding-left: 300px;
-    margin-top: 0px;
-    margin-bottom: -60%;
-    color:#3A3A3A
-    
-}
-.item-name{
-    font-size: 28px;
-    color:#18191F;
-    margin-top: 0%;
-}
-.item-price{
-    font-size: 24px;
-    color: #000000DE;
-    margin-bottom: -3%;
-    margin-top: 3%;
 
-    
-    
-
-}
-.popular-collections{
+.cards{
+    width: 70%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap:30px;
-    font-size:14px;
-    color:#787885;
-    
+    grid-gap: 30px;
+}
+.collections{
+    padding: 15px;
+    box-shadow: 1px 1px 4px -1px grey;
+    border-radius: 10px;
+}
 
-}
-.collection .collection-banner img{
-    width: 224px;
-    height: 104px;
+.collection-banner img{
+    width: 100%;
+    height: 200px;
     
-}
-.item-ratings{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 3%;
-    padding-top: 0%;
 }
 .fa-star{
     font-size: 12px;
@@ -110,6 +102,17 @@ h1{
     color:#AEAEAE;
 }
 
+.animation-div{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* footer */
+
 footer{
     text-align: center;
     color:#D9DBE1;
@@ -119,5 +122,52 @@ footer{
     color:#D9DBE1; ;
 }
 .social-media{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.social-media .fab{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 576px)  {
+    .first-heading{
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+    .half-width{
+        width: 95%;
+    }
+
+
+    .sponser-companies{
+        width: 95%;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .cards{
+        width: 95%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+@media only screen and (max-width: 992px)  {
+    .sponser-companies{
+        width: 95%;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .cards{
+        width: 95%;
+    }
     
 }
